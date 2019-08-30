@@ -301,6 +301,7 @@ p {
   }
 }
 .scene-container {
+  top:-20%;
   position: relative;
   width: 140px;
   height: 160px;
