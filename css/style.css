@@ -713,10 +713,6 @@ p {
   animation-delay: 350ms;
 }
 
-@media screen and (max-width: 600px) {
-  #ghost {
-    visibility: hidden;
-  }
 }
 
 /*# sourceMappingURL=out.css.map */
