@@ -3,7 +3,7 @@ html {
 }
 
 @font-face {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: italic;
   font-weight: 300;
   src: local("Lato Light Italic"), local("Lato-LightItalic"), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf) format("truetype");
@@ -219,7 +219,7 @@ body {
 */
 h1,
 p {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
   font-style: italic;
   text-align: center;
@@ -242,15 +242,6 @@ p {
   font-weight: bold;
 }
 
-@-webkit-keyframes hover {
-  0% {
-    top: 0;
-  }
-  100% {
-    top: 8px;
-  }
-}
-
 @keyframes hover {
   0% {
     top: 0;
@@ -259,132 +250,54 @@ p {
     top: 8px;
   }
 }
-@-webkit-keyframes star-entrance {
-  0% {
-    -webkit-transform: rotate(-735deg) scale(0, 0);
-            transform: rotate(-735deg) scale(0, 0);
-  }
-  100% {
-    -webkit-transform: rotate(0) scale(1, 1);
-            transform: rotate(0) scale(1, 1);
-  }
-}
 @keyframes star-entrance {
   0% {
-    -webkit-transform: rotate(-735deg) scale(0, 0);
-            transform: rotate(-735deg) scale(0, 0);
+    transform: rotate(-735deg) scale(0, 0);
   }
   100% {
-    -webkit-transform: rotate(0) scale(1, 1);
-            transform: rotate(0) scale(1, 1);
-  }
-}
-@-webkit-keyframes star-exit {
-  0% {
-    -webkit-transform: rotate(0) scale(1, 1);
-            transform: rotate(0) scale(1, 1);
-  }
-  100% {
-    -webkit-transform: rotate(360deg) scale(0, 0);
-            transform: rotate(360deg) scale(0, 0);
+    transform: rotate(0) scale(1, 1);
   }
 }
 @keyframes star-exit {
   0% {
-    -webkit-transform: rotate(0) scale(1, 1);
-            transform: rotate(0) scale(1, 1);
+    transform: rotate(0) scale(1, 1);
   }
   100% {
-    -webkit-transform: rotate(360deg) scale(0, 0);
-            transform: rotate(360deg) scale(0, 0);
-  }
-}
-@-webkit-keyframes twinkle {
-  0% {
-    -webkit-transform: rotate(0deg) scale(1, 1);
-            transform: rotate(0deg) scale(1, 1);
-  }
-  25% {
-    -webkit-transform: rotate(10deg) scale(0.8, 0.8);
-            transform: rotate(10deg) scale(0.8, 0.8);
-  }
-  50% {
-    -webkit-transform: rotate(0deg) scale(0.9, 0.9);
-            transform: rotate(0deg) scale(0.9, 0.9);
-  }
-  75% {
-    -webkit-transform: rotate(-20deg) scale(0.6, 0.6);
-            transform: rotate(-20deg) scale(0.6, 0.6);
-  }
-  100% {
-    -webkit-transform: rotate(0deg) scale(1, 1);
-            transform: rotate(0deg) scale(1, 1);
+    transform: rotate(360deg) scale(0, 0);
   }
 }
 @keyframes twinkle {
   0% {
-    -webkit-transform: rotate(0deg) scale(1, 1);
-            transform: rotate(0deg) scale(1, 1);
+    transform: rotate(0deg) scale(1, 1);
   }
   25% {
-    -webkit-transform: rotate(10deg) scale(0.8, 0.8);
-            transform: rotate(10deg) scale(0.8, 0.8);
+    transform: rotate(10deg) scale(0.8, 0.8);
   }
   50% {
-    -webkit-transform: rotate(0deg) scale(0.9, 0.9);
-            transform: rotate(0deg) scale(0.9, 0.9);
+    transform: rotate(0deg) scale(0.9, 0.9);
   }
   75% {
-    -webkit-transform: rotate(-20deg) scale(0.6, 0.6);
-            transform: rotate(-20deg) scale(0.6, 0.6);
+    transform: rotate(-20deg) scale(0.6, 0.6);
   }
   100% {
-    -webkit-transform: rotate(0deg) scale(1, 1);
-            transform: rotate(0deg) scale(1, 1);
-  }
-}
-@-webkit-keyframes waving {
-  0% {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-  }
-  25% {
-    -webkit-transform: rotate(-55deg);
-            transform: rotate(-55deg);
-  }
-  50% {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-  }
-  75% {
-    -webkit-transform: rotate(-55deg);
-            transform: rotate(-55deg);
-  }
-  100% {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(0deg) scale(1, 1);
   }
 }
 @keyframes waving {
   0% {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
   25% {
-    -webkit-transform: rotate(-55deg);
-            transform: rotate(-55deg);
+    transform: rotate(-55deg);
   }
   50% {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
   75% {
-    -webkit-transform: rotate(-55deg);
-            transform: rotate(-55deg);
+    transform: rotate(-55deg);
   }
   100% {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
 }
 .scene-container {
@@ -396,15 +309,11 @@ p {
   outline: none;
 }
 .scene-container.run-away .ghost {
-  -webkit-transform: rotateX(-10deg) scale3d(1.4, 4, 1) translate3d(0, 130%, -30px);
-          transform: rotateX(-10deg) scale3d(1.4, 4, 1) translate3d(0, 130%, -30px);
-  transition: -webkit-transform 800ms ease;
+  transform: rotateX(-10deg) scale3d(1.4, 4, 1) translate3d(0, 130%, -30px);
   transition: transform 800ms ease;
-  transition: transform 800ms ease, -webkit-transform 800ms ease;
 }
 .scene-container.descend .ghost {
-  -webkit-transform: translate3d(0, 130%, 0);
-          transform: translate3d(0, 130%, 0);
+  transform: translate3d(0, 130%, 0);
 }
 
 .ghost-container {
@@ -413,21 +322,17 @@ p {
   height: 140px;
   padding: 20px 30px 0 30px;
   overflow: hidden;
-  -webkit-perspective: 30px;
-          perspective: 30px;
+  perspective: 30px;
 }
 
 .ghost {
   position: relative;
   height: 115px;
   z-index: 1;
-  transition: -webkit-transform 2000ms ease-out;
   transition: transform 2000ms ease-out;
-  transition: transform 2000ms ease-out, -webkit-transform 2000ms ease-out;
 }
 .ghost.hover {
-  -webkit-animation: hover 600ms ease-in-out infinite alternate;
-          animation: hover 600ms ease-in-out infinite alternate;
+  animation: hover 600ms ease-in-out infinite alternate;
 }
 
 .ghost-head {
@@ -481,8 +386,7 @@ p {
   left: 50%;
   top: 0;
   height: 10px;
-  -webkit-transform: translate3d(-50%, 0, 0);
-          transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
 }
 .mouth .mouth-top {
   width: 18px;
@@ -499,7 +403,7 @@ p {
   transition: height 150ms ease;
 }
 .mouth .mouth-bottom:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -550,22 +454,18 @@ p {
 .ghost-hand.hand-left {
   left: -12px;
   top: 10px;
-  -webkit-transform: rotateZ(-45deg);
-          transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
   left: 0;
   top: 5px;
-  -webkit-transform-origin: bottom center;
-          transform-origin: bottom center;
+  transform-origin: bottom center;
 }
 .ghost-hand.hand-left.waving {
-  -webkit-animation: waving 400ms linear;
-          animation: waving 400ms linear;
+  animation: waving 400ms linear;
 }
 .ghost-hand.hand-right {
   right: -12px;
   top: 10px;
-  -webkit-transform: rotateZ(45deg);
-          transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
 }
 
 .ghost-skirt {
@@ -574,8 +474,7 @@ p {
   bottom: 0;
   width: 100%;
   display: flex;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  transform: translateY(50%);
 }
 .ghost-skirt .pleat {
   width: 20%;
@@ -592,16 +491,11 @@ p {
 }
 
 .shadow-container {
-  transition: -webkit-transform 800ms ease;
   transition: transform 800ms ease;
-  transition: transform 800ms ease, -webkit-transform 800ms ease;
 }
 .shadow-container.disappear {
-  -webkit-transform: scale3d(0, 1, 1);
-          transform: scale3d(0, 1, 1);
-  transition: -webkit-transform 400ms ease;
+  transform: scale3d(0, 1, 1);
   transition: transform 400ms ease;
-  transition: transform 400ms ease, -webkit-transform 400ms ease;
 }
 
 .shadow {
@@ -624,7 +518,7 @@ p {
   overflow: hidden;
 }
 .shadow-bottom:after {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   position: absolute;
@@ -638,8 +532,7 @@ p {
 
 .star {
   position: absolute;
-  -webkit-animation: twinkle 2s infinite linear;
-          animation: twinkle 2s infinite linear;
+  animation: twinkle 2s infinite linear;
   transition: top 400ms ease-out, left 400ms ease-out;
 }
 .star.round .star-element {
@@ -648,15 +541,14 @@ p {
   border-radius: 100%;
 }
 .star.pointy {
-  -webkit-transform: rotate(-15deg);
-          transform: rotate(-15deg);
+  transform: rotate(-15deg);
 }
 .star.pointy .star-element {
   height: 6px;
   width: 6px;
 }
 .star.pointy .star-element:before, .star.pointy .star-element:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   background: green;
@@ -667,16 +559,14 @@ p {
   width: 12px;
   left: -3px;
   top: 0;
-  -webkit-transform: skewX(60deg);
-          transform: skewX(60deg);
+  transform: skewX(60deg);
 }
 .star.pointy .star-element:after {
   height: 12px;
   width: 6px;
   right: 0;
   bottom: -3px;
-  -webkit-transform: skewY(-60deg);
-          transform: skewY(-60deg);
+  transform: skewY(-60deg);
 }
 .star.orange .star-element, .star.orange .star-element:before, .star.orange .star-element:after {
   background-color: #DF814D;
@@ -692,8 +582,7 @@ p {
   top: 130%;
   left: 40%;
   transition-delay: 200ms;
-  -webkit-animation-delay: 0ms;
-          animation-delay: 0ms;
+  animation-delay: 0ms;
   z-index: 2;
 }
 
@@ -701,16 +590,14 @@ p {
   top: 130%;
   left: 44%;
   transition-delay: 250ms;
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
+  animation-delay: 200ms;
 }
 
 .star-3 {
   top: 130%;
   left: 48%;
   transition-delay: 300ms;
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
+  animation-delay: 400ms;
   z-index: 2;
 }
 
@@ -718,16 +605,14 @@ p {
   top: 130%;
   left: 52%;
   transition-delay: 350ms;
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
+  animation-delay: 600ms;
 }
 
 .star-5 {
   top: 130%;
   left: 56%;
   transition-delay: 400ms;
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
+  animation-delay: 800ms;
   z-index: 2;
 }
 
@@ -735,13 +620,11 @@ p {
   top: 130%;
   left: 60%;
   transition-delay: 450ms;
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
+  animation-delay: 1000ms;
 }
 
 .move-stars-out .star-element {
-  -webkit-animation: star-entrance 1500ms;
-          animation: star-entrance 1500ms;
+  animation: star-entrance 1500ms;
 }
 
 .stars-out .star {
@@ -775,72 +658,59 @@ p {
   transition-delay: 0ms, 0ms;
 }
 .stars-out .star-1 .star-element {
-  -webkit-animation-delay: 0ms;
-          animation-delay: 0ms;
+  animation-delay: 0ms;
 }
 .stars-out .star-2 {
   transition-delay: 200ms, 200ms;
 }
 .stars-out .star-2 .star-element {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
+  animation-delay: 200ms;
 }
 .stars-out .star-3 {
   transition-delay: 400ms, 400ms;
 }
 .stars-out .star-3 .star-element {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
+  animation-delay: 400ms;
 }
 .stars-out .star-4 {
   transition-delay: 600ms, 600ms;
 }
 .stars-out .star-4 .star-element {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
+  animation-delay: 600ms;
 }
 .stars-out .star-5 {
   transition-delay: 800ms, 800ms;
 }
 .stars-out .star-5 .star-element {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
+  animation-delay: 800ms;
 }
 .stars-out .star-6 {
   transition-delay: 1000ms, 1000ms;
 }
 .stars-out .star-6 .star-element {
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
+  animation-delay: 1000ms;
 }
 
 .move-stars-in .star-element {
-  -webkit-animation: star-exit 400ms linear;
-          animation: star-exit 400ms linear;
+  animation: star-exit 400ms linear;
 }
 .move-stars-in .star-1 .star-element {
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
+  animation-delay: 100ms;
 }
 .move-stars-in .star-2 .star-element {
-  -webkit-animation-delay: 150ms;
-          animation-delay: 150ms;
+  animation-delay: 150ms;
 }
 .move-stars-in .star-3 .star-element {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
+  animation-delay: 200ms;
 }
 .move-stars-in .star-4 .star-element {
-  -webkit-animation-delay: 250ms;
-          animation-delay: 250ms;
+  animation-delay: 250ms;
 }
 .move-stars-in .star-5 .star-element {
-  -webkit-animation-delay: 300ms;
-          animation-delay: 300ms;
+  animation-delay: 300ms;
 }
 .move-stars-in .star-6 .star-element {
-  -webkit-animation-delay: 350ms;
-          animation-delay: 350ms;
+  animation-delay: 350ms;
 }
 
 @media screen and (max-width: 600px) {
@@ -848,3 +718,5 @@ p {
     visibility: hidden;
   }
 }
+
+/*# sourceMappingURL=out.css.map */
